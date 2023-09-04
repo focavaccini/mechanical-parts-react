@@ -1,0 +1,39 @@
+function ListProfessional() {
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Gerenciamento de Profissionais</li>
+    </ol>
+</nav>
+<div class="container">
+    <div class="card list-professional">
+        <h5 class="card-header">Lista de Profissionais</h5>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  class="profissional-item">
+                        <td>{props.id}</td>
+                        <td>{props.name}</td>
+                        <td>{props.email}</td>
+                        <td>{props.phone}</td>
+                        <td>
+                            {/* <button type="button" class="btn btn-warning btn-sm" (click)="irParaComponenteDestino()">Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm ml-1" (click)="irParaComponenteDestino()">Deletar</button> */}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+}
+
+export default listProfessionalTemplate;
